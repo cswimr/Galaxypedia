@@ -1,5 +1,8 @@
 {
     "recurse": true,
-    "serverRoot": "./public",
-    "skip": "livereload.js"
+    "skip": "livereload.js",
+    "retry": true,
+    "retryErrors": true,
+    "retryErrorsCount": 3,
+    "retryErrorsJitter": 5
 }
