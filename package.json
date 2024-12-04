@@ -9,7 +9,7 @@
     "linkrot": "linkinator --config ./linkinator.config.json",
     "pagefind": "pagefind --site public",
     "build": "hugo && pnpm pagefind",
-    "ci": "hugo build --minify --baseURL '${PAGEURL}' && pnpm pagefind && pnpm linkrot",
+    "ci": "hugo --minify --baseURL '${PAGEURL}' && pnpm pagefind && pnpm linkrot",
     "serve": "pnpm build && hugo server -D"
   },
   "keywords": [],
