@@ -53,15 +53,14 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Install Node.js dependencies
-        run: "[[ -f pnpm-lock.yaml ]] && pnpm i -P || true"
+        run: "pnpm i -P"
       - name: Build with Hugo
         env:
+          PAGEURL: ${{ steps.pages.outputs.page_url }}
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          pnpm ci
       - name: Index pages
         run: |
           pnpm pagefind --site public

@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "hugo && pnpm pagefind --site public",
+    "format": "prettier --write",
+    "linkrot": "linkinator --config ./linkinator.config.json",
+    "pagefind": "pagefind --site public",
+    "build": "hugo && pnpm pagefind",
+    "ci": "hugo build --minify --baseURL '${PAGEURL}' && pnpm pagefind && pnpm linkrot",
     "serve": "pnpm build && hugo server -D"
   },
   "keywords": [],
@@ -16,6 +20,7 @@
     "prettier-plugin-go-template": "^0.0.15"
   },
   "dependencies": {
+    "linkinator": "^6.1.2",
     "pagefind": "^1.2.0"
   }
 }
