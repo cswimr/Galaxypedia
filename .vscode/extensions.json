@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "davidanson.vscode-markdownlint",
+        "kaellarkin.hugo-shortcode-syntax",
+        "budparr.language-hugo-vscode"
+    ]
+}

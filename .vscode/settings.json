@@ -1,0 +1,12 @@
+{
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "on",
+      "strings": "on"
+    },
+    "editor.tabCompletion": "onlySnippets",
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
