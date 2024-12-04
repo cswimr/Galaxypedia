@@ -53,7 +53,7 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && pnpm i -P || true"
+        run: "[[ -f pnpm-lock.yaml ]] && pnpm i -P || true"
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
