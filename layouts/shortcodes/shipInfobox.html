@@ -1,0 +1,68 @@
+{{ $data := dict }}
+{{ $url := "https://api.info.galaxy.casa/api/v2/galaxypedia" }}
+{{ with resources.GetRemote $url }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $data = . | transform.Unmarshal }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get remote resource %q" $url }}
+{{ end }}
+
+<!-- Get the data for the specific ship (match to page title) -->
+{{ $ship := "" }}
+{{ $ship = .Page.Title }}
+{{ $ship = $ship | replaceRE " " "_" }}
+{{ $ship = $ship | title }}
+
+{{ $shipData := dict }}
+{{ $shipData = index $data $ship }}
+
+<!-- Override values in shipData with named parameters -->
+{{ range $key, $value := .Params }}
+    {{ $shipData = dict $shipData }}
+    {{ $shipData.Set $key $value }}
+{{ end }}
+
+<!-- TODO: This will still show the parameter names even if there is no value -->
+<div class="shipinfobox" style="float: right; width: 400px;">
+    <h2>The {{ .Page.Title }}</h2>
+    <h3>Health</h3>
+    <p><b>Shield:</b> {{ index $shipData "shields" }}</p>
+    <p><b>Hull:</b> {{ index $shipData "hull" }}</p>
+    <p><b>Shield Regeneration Rate:</b> {{ index $shipData "shield_regen_rate" }}</p>
+    
+    <h3>Manuverability</h3>
+    <p><b>Top Speed:</b> {{ index $shipData "top_speed" }}</p>
+    <p><b>Acceleration:</b> {{ index $shipData "acceleration" }}</p>
+    <p><b>Turn Speed:</b> {{ index $shipData "turn_speed" }}</p>
+
+    <h3>Armament</h3>
+    
+    <h3>Misc</h3>
+    <p><b>Description:</b> {{ index $shipData "description" }}</p>
+    <p><b>Creator:</b> {{ index $shipData "creator" }}</p>
+    <p><b>Version Added:</b> {{ index $shipData "version_added" }}</p>
+    <p><b>Date Added:</b> {{ index $shipData "date_added" }}</p>
+    <p><b>Related Events:</b> {{ index $shipData "related_events" }}</p>
+    <p><b>VIP Required:</b> {{ index $shipData "vip_required" }}</p>
+</div>
+
+<script type="text/javascript">
+// Remove parameters that have no value
+document.querySelectorAll('.shipinfobox p').forEach(function(p) {
+    if (p.textContent.includes(":")) {
+        var value = p.textContent.split(":")[1].trim();
+        if (value === "") {
+            p.remove();
+        }
+    }
+});
+</script>
+
+<style>
+.shipinfobox h2, .shipinfobox h3 {
+    text-align: center;
+}
+</style>
