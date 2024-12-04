@@ -61,9 +61,6 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: |
           pnpm run ci
-      - name: Index pages
-        run: |
-          pnpm pagefind --site public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
