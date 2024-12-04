@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      pagefind:
+        specifier: ^1.2.0
+        version: 1.2.0
     devDependencies:
       prettier:
         specifier: ^3.4.2
@@ -16,6 +20,35 @@ importers:
         version: 0.0.15(prettier@3.4.2)
 
 packages:
+
+  '@pagefind/darwin-arm64@1.2.0':
+    resolution: {integrity: sha512-pHnPL2rm4xbe0LqV376g84hUIsVdy4PK6o2ACveo0DSGoC40eOIwPUPftnUPUinSdDWkkySaL5FT5r9hsXk0ZQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@pagefind/darwin-x64@1.2.0':
+    resolution: {integrity: sha512-q2tcnfvcRyx0GnrJoUQJ5bRpiFNtI8DZWM6a4/k8sNJxm2dbM1BnY5hUeo4MbDfpb64Qc1wRMcvBUSOaMKBjfg==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@pagefind/linux-arm64@1.2.0':
+    resolution: {integrity: sha512-wVtLOlF9AUrwLovP9ZSEKOYnwIVrrxId4I2Mz02Zxm3wbUIJyx8wHf6LyEf7W7mJ6rEjW5jtavKAbngKCAaicg==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@pagefind/linux-x64@1.2.0':
+    resolution: {integrity: sha512-Lo5aO2bA++sQTeEWzK5WKr3KU0yzVH5OnTY88apZfkgL4AVfXckH2mrOU8ouYKCLNPseIYTLFEdj0V5xjHQSwQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@pagefind/windows-x64@1.2.0':
+    resolution: {integrity: sha512-tGQcwQAb5Ndv7woc7lhH9iAdxOnTNsgCz8sEBbsASPB2A0uI8BWBmVdf2GFLQkYHqnnqYuun63sa+UOzB7Ah3g==}
+    cpu: [x64]
+    os: [win32]
+
+  pagefind@1.2.0:
+    resolution: {integrity: sha512-sFVv5/x73qCp9KlLHv8/uWDv7rG1tsWcG9MuXc5YTrXIrb8c1Gshm9oc5rMLXNZILXUWai8WczqaK4jjroEzng==}
+    hasBin: true
 
   prettier-plugin-go-template@0.0.15:
     resolution: {integrity: sha512-WqU92E1NokWYNZ9mLE6ijoRg6LtIGdLMePt2C7UBDjXeDH9okcRI3zRqtnWR4s5AloiqyvZ66jNBAa9tmRY5EQ==}
@@ -33,6 +66,29 @@ packages:
     hasBin: true
 
 snapshots:
+
+  '@pagefind/darwin-arm64@1.2.0':
+    optional: true
+
+  '@pagefind/darwin-x64@1.2.0':
+    optional: true
+
+  '@pagefind/linux-arm64@1.2.0':
+    optional: true
+
+  '@pagefind/linux-x64@1.2.0':
+    optional: true
+
+  '@pagefind/windows-x64@1.2.0':
+    optional: true
+
+  pagefind@1.2.0:
+    optionalDependencies:
+      '@pagefind/darwin-arm64': 1.2.0
+      '@pagefind/darwin-x64': 1.2.0
+      '@pagefind/linux-arm64': 1.2.0
+      '@pagefind/linux-x64': 1.2.0
+      '@pagefind/windows-x64': 1.2.0
 
   prettier-plugin-go-template@0.0.15(prettier@3.4.2):
     dependencies:

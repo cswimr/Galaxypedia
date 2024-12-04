@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "hugo && pnpm pagefind --site public",
+    "serve": "pnpm build && hugo server -D"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,8 @@
   "devDependencies": {
     "prettier": "^3.4.2",
     "prettier-plugin-go-template": "^0.0.15"
+  },
+  "dependencies": {
+    "pagefind": "^1.2.0"
   }
 }
