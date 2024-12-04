@@ -5,12 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write",
-    "linkrot": "linkinator ./public --config ./linkinator.config.json",
-    "pagefind": "pagefind --site public",
-    "build": "hugo && pnpm pagefind",
-    "ci": "hugo --minify --baseURL '${PAGEURL}' && pnpm pagefind && pnpm linkrot",
-    "serve": "pnpm build && hugo server -D"
+    "build": "hugo && pnpm pagefind --site public",
+    "serve": "pnpm build && hugo server -D",
+    "index": "pnpm pagefind --site public"
   },
   "keywords": [],
   "author": "",
