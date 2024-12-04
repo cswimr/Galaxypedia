@@ -1,8 +1,9 @@
 ---
 title: Deity
 ---
+
 {{< shipInfobox >}}
-The ***Deity*** is an extremely maneuverable [Super Capital
+The **_Deity_** is an extremely maneuverable [Super Capital
 Ship](:Category:Super_Capital_Ship "wikilink") that is extremely adept
 at brawling against other capital ships.
 
@@ -38,115 +39,114 @@ a bar in the middle and seats on the front.
 
 ## Advantages
 
--   Fantastic for PvP against other
-    [Dreadnoughts](:Category:Dreadnought "wikilink"),
-    [Carriers](:Category:Carrier "wikilink") and especially [Super
-    Capitals](:Category:Super_Capital_Ship "wikilink").
--   Has turn speed that is better than many
-    [Battleships](:Category:Battleship "wikilink").
--   Has the highest mobility and speed in its class.
--   Turrets have good accuracy and extremely fast reload, allowing it to
-    mow down enemy ships easily.
--   Has high turret-based firepower.
--   [Module](Ship_Modules "wikilink") changes top speed to 150 in
-    exchange for lower turn speed.
+- Fantastic for PvP against other
+  [Dreadnoughts](:Category:Dreadnought "wikilink"),
+  [Carriers](:Category:Carrier "wikilink") and especially [Super
+  Capitals](:Category:Super_Capital_Ship "wikilink").
+- Has turn speed that is better than many
+  [Battleships](:Category:Battleship "wikilink").
+- Has the highest mobility and speed in its class.
+- Turrets have good accuracy and extremely fast reload, allowing it to
+  mow down enemy ships easily.
+- Has high turret-based firepower.
+- [Module](Ship_Modules "wikilink") changes top speed to 150 in
+  exchange for lower turn speed.
 
 ## Disadvantages
 
--   No [Turrets](Turrets "wikilink") underneath the ship, making it an
-    easy target for swarms of smaller ships.
--   Low hull damage output compared to shields.
--   2nd lowest total health out of any [Super Capital
-    Ship](:Category:Super_Capital_Ship "wikilink"), only beaten by
-    [Theia](Theia "wikilink").
--   Rather low health and limited range makes it an inappropriate ship
-    for sieging.
--   Has difficulty hitting ships that are smaller than a
-    [Battlecruiser](:Category:battlecruiser "wikilink").
--   Like most large ships, it has a lot of surface area where it can be
-    easily shot. This is somewhat balanced by the relatively high speed
-    of this ship.
+- No [Turrets](Turrets "wikilink") underneath the ship, making it an
+  easy target for swarms of smaller ships.
+- Low hull damage output compared to shields.
+- 2nd lowest total health out of any [Super Capital
+  Ship](:Category:Super_Capital_Ship "wikilink"), only beaten by
+  [Theia](Theia "wikilink").
+- Rather low health and limited range makes it an inappropriate ship
+  for sieging.
+- Has difficulty hitting ships that are smaller than a
+  [Battlecruiser](:Category:battlecruiser "wikilink").
+- Like most large ships, it has a lot of surface area where it can be
+  easily shot. This is somewhat balanced by the relatively high speed
+  of this ship.
 
 ## Strategy
 
--   It is not a good idea to siege with this ship because of its below
-    average health and limited range.
--   Never travel alone unless you are absolutely certain you will not
-    lose it.
--   If you are up against a [Super Capital
-    Ship](:Category:Super_Capital_Ship "wikilink"), try to get under
-    them and behind them so you can take it down while minimizing damage
-    from their main, heavy-hitting Turrets.
--   This ship is best used in a fleet, as providing cover for it can
-    make it maximize it\'s potential, and lessens the chance of getting
-    [dived](Galaxy_Slang "wikilink").
--   Avoid attempting to engage multiple small ships at once. The ship is
-    capable, but like many other ships in its class; it suffers from
-    less than ideal accuracy on its turrets, and is highly vulnerable to
-    swarming because of it.
--   Keep large ships in your line of fire by taking advantage of your
-    quick speed and good maneuverability.
--   When fighting against large ships such as other [Super
-    Capitals](:Category:Super_Capital_Ship "wikilink") or
-    [Dreadnoughts](:Category:Dreadnought "wikilink"), take advantage of
-    your superior mobility and warp underneath them.
--   This ship is great at [diving](Galaxy_Terminology "wikilink"), so
-    use that to your advantage.
+- It is not a good idea to siege with this ship because of its below
+  average health and limited range.
+- Never travel alone unless you are absolutely certain you will not
+  lose it.
+- If you are up against a [Super Capital
+  Ship](:Category:Super_Capital_Ship "wikilink"), try to get under
+  them and behind them so you can take it down while minimizing damage
+  from their main, heavy-hitting Turrets.
+- This ship is best used in a fleet, as providing cover for it can
+  make it maximize it\'s potential, and lessens the chance of getting
+  [dived](Galaxy_Slang "wikilink").
+- Avoid attempting to engage multiple small ships at once. The ship is
+  capable, but like many other ships in its class; it suffers from
+  less than ideal accuracy on its turrets, and is highly vulnerable to
+  swarming because of it.
+- Keep large ships in your line of fire by taking advantage of your
+  quick speed and good maneuverability.
+- When fighting against large ships such as other [Super
+  Capitals](:Category:Super_Capital_Ship "wikilink") or
+  [Dreadnoughts](:Category:Dreadnought "wikilink"), take advantage of
+  your superior mobility and warp underneath them.
+- This ship is great at [diving](Galaxy_Terminology "wikilink"), so
+  use that to your advantage.
 
 ## Version History {#version_history}
 
--   Added in version .65b
--   Turn speed buffed from 0.08 to 0.1 in version .66b
--   Remodeled in .66b
--   Disabled in .66b along with the other Super Capitals due to weapon
-    part/alien device duping
--   Reactivated in .66b shortly after being disabled but now with a
-    credit cost
--   Received an orange trail in .66c
--   Turret loadout changed to 2 Huge Double Laser, 2 Capital Triple
-    Cannon, 1 Huge Triple Cannon, 2 Capital Triple Laser, 1 Quantum
-    Cannon, and 1 Heavy Flak Cannon in version .72b. Shield and hull
-    increased to 10500 shield and 12500 hull in version .72b
--   Reactivated in .72b with a new cost: Now requires 1 SC permit and
-    regular build materials
--   Version 72f: loadout changed---3 Huge Quad Lasers; 4 Heavy Quantum
-    Lasers; 2 Huge Triple Cannons; 1 Triple Heavy Quantum Cannon; Deity
-    turnspeed lowered to 0.2
--   Turnspeed increased to 0.22, Two Huge Quad Lasers swapped for Two
-    Huge Triple Lasers in version .72f
--   Turnspeed lowered to 0.19, Huge Quad Laser drops to a Huge Double
-    Laser in version .72f
--   Deity turnspeed increased to 0.21 from 0.19, Deity trades 2 Heavy
-    Quantum Lasers for 2 Quantum Lasers, Deity trades 1 Huge Triple
-    Laser for 1 Huge Double Laser in version .72f
--   Rebalanced in .75a3
--   Taken offsale in version .75a5 along with all the other build menu
-    super capitals to reduce super capital permit prices
--   Deity DockPoint moved like 1.8 studs to the right (no longer
-    off-center) .75a12
--   Deity and Olympian turrets remodeled in an unknown version.
+- Added in version .65b
+- Turn speed buffed from 0.08 to 0.1 in version .66b
+- Remodeled in .66b
+- Disabled in .66b along with the other Super Capitals due to weapon
+  part/alien device duping
+- Reactivated in .66b shortly after being disabled but now with a
+  credit cost
+- Received an orange trail in .66c
+- Turret loadout changed to 2 Huge Double Laser, 2 Capital Triple
+  Cannon, 1 Huge Triple Cannon, 2 Capital Triple Laser, 1 Quantum
+  Cannon, and 1 Heavy Flak Cannon in version .72b. Shield and hull
+  increased to 10500 shield and 12500 hull in version .72b
+- Reactivated in .72b with a new cost: Now requires 1 SC permit and
+  regular build materials
+- Version 72f: loadout changed---3 Huge Quad Lasers; 4 Heavy Quantum
+  Lasers; 2 Huge Triple Cannons; 1 Triple Heavy Quantum Cannon; Deity
+  turnspeed lowered to 0.2
+- Turnspeed increased to 0.22, Two Huge Quad Lasers swapped for Two
+  Huge Triple Lasers in version .72f
+- Turnspeed lowered to 0.19, Huge Quad Laser drops to a Huge Double
+  Laser in version .72f
+- Deity turnspeed increased to 0.21 from 0.19, Deity trades 2 Heavy
+  Quantum Lasers for 2 Quantum Lasers, Deity trades 1 Huge Triple
+  Laser for 1 Huge Double Laser in version .72f
+- Rebalanced in .75a3
+- Taken offsale in version .75a5 along with all the other build menu
+  super capitals to reduce super capital permit prices
+- Deity DockPoint moved like 1.8 studs to the right (no longer
+  off-center) .75a12
+- Deity and Olympian turrets remodeled in an unknown version.
 
 ## Trivia
 
-![Deity\'s 1st Model](Old_Deity-icon.png "Deity's 1st Model") ![Deity\'s
+![Deity's 1st Model](Old_Deity-icon.png "Deity's 1st Model") ![Deity's
 2nd Model](Deityold-icon.png "Deity's 2nd Model")
 
--   Deity used to have a secret teleporter to a room with a toaster as
-    an object.
--   The first ship to have Huge size [Turrets](Turrets "wikilink").
--   Its first model contained [The Cultists](The_Cultists "wikilink")\'
-    logo and shared some designs in it similar to the
-    [Osiris](Osiris "wikilink").
--   This ship\'s name is reference to a divine character or nature.
--   The first player to lose a Deity was VindictiveXZ, who lost it to a
-    [Leviathan](Leviathan "wikilink") piloted by 1_Fast. It was the
-    second [Super Capital Ship](:Category:Super_Capital_Ship "wikilink")
-    to be destroyed.
--   The 2nd Model was based on the Farragut from ELITE:
-    Dangerous![](E4942744-6FF0-4725-A0C9-EA224D00F692.png "E4942744-6FF0-4725-A0C9-EA224D00F692.png")
--   The 1st Model was referred to a \"shoe\" by some players.
--   This page is typically used by
-    [User:Smallketchup82](User:Smallketchup82 "wikilink") to test
-    Galaxypedia functions (i.e. KetchupBot) on, due to its memorable
-    name
-
+- Deity used to have a secret teleporter to a room with a toaster as
+  an object.
+- The first ship to have Huge size [Turrets](Turrets "wikilink").
+- Its first model contained [The Cultists](The_Cultists "wikilink")\'
+  logo and shared some designs in it similar to the
+  [Osiris](Osiris "wikilink").
+- This ship\'s name is reference to a divine character or nature.
+- The first player to lose a Deity was VindictiveXZ, who lost it to a
+  [Leviathan](Leviathan "wikilink") piloted by 1_Fast. It was the
+  second [Super Capital Ship](:Category:Super_Capital_Ship "wikilink")
+  to be destroyed.
+- The 2nd Model was based on the Farragut from ELITE:
+  Dangerous![](E4942744-6FF0-4725-A0C9-EA224D00F692.png "E4942744-6FF0-4725-A0C9-EA224D00F692.png")
+- The 1st Model was referred to a \"shoe\" by some players.
+- This page is typically used by
+  [User:Smallketchup82](User:Smallketchup82 "wikilink") to test
+  Galaxypedia functions (i.e. KetchupBot) on, due to its memorable
+  name
