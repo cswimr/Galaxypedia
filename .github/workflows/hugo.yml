@@ -53,8 +53,8 @@ jobs:
           node-version: "22"
       - name: Install pnpm
         run: npm install -g pnpm
-      - name: Install Node.js dependencies
-        run: "pnpm i -P && pnpm add -g npx"
+      - name: Setup pnpm & Install dependencies
+        run: "pnpm setup && pnpm i -P && pnpm add -g npx"
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
