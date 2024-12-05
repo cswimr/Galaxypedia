@@ -1,8 +1,9 @@
 name: build
 on:
   workflow_call:
-    inputs: production
-      type: boolean
+    inputs:
+      production:
+        type: boolean
 
 jobs:
   build:
