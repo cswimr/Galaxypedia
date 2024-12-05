@@ -1,5 +1,14 @@
-baseURL = 'https://galaxypedia-wiki.github.io/Galaxypedia-Hugo/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'Galaxypedia'
 sectionPagesMenu = 'main'
 enableGitInfo = true
+
+[build.buildStats]
+    enable = true
+[[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+[[build.cachebusters]]
+    source = "(postcss|tailwind)\\.config\\.js"
+    target = "css"

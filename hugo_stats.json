@@ -1,0 +1,46 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "b",
+      "body",
+      "br",
+      "div",
+      "em",
+      "footer",
+      "h1",
+      "h2",
+      "h3",
+      "head",
+      "html",
+      "img",
+      "li",
+      "link",
+      "meta",
+      "p",
+      "script",
+      "strong",
+      "style",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "footer",
+      "infobox-row",
+      "markdown",
+      "my-10",
+      "shipinfobox"
+    ],
+    "ids": [
+      "advantages",
+      "appearance",
+      "description",
+      "disadvantages",
+      "footer-info",
+      "search",
+      "strategy",
+      "trivia",
+      "version_history"
+    ]
+  }
+}

@@ -1,4 +1,13 @@
 {{ define "main" }}
+<link href="{{.Site.BaseURL }}/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="{{.Site.BaseURL }}/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
+<a href="{{ .Site.BaseURL }}">Home</a>
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 {{ end }}
