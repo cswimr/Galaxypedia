@@ -23,11 +23,33 @@
     <meta content="website" property="og:type" />
     <meta content="summary_large_image" property="twitter:card" />
     <meta charset="utf-8" />
-    <title>{{ block "title" . }}{{ end }}</title>
-  </head>
-  <body>
-    {{ block "main" . }}
+    <title>Galaxypedia - {{ .Title }}</title>
+    {{ with (templates.Defer (dict "key" "global")) }}
+      {{ $t := debug.Timer "tailwindcss" }}
+      {{ with resources.Get "css/styles.css" }}
+        {{ $opts := dict
+          "inlineImports" true
+          "optimize" (not hugo.IsDevelopment)
+        }}
+        {{ with . | css.TailwindCSS $opts }}
+          {{ if hugo.IsDevelopment }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}" />
+          {{ else }}
+            {{ with . | minify | fingerprint }}
+              <link
+                rel="stylesheet"
+                href="{{ .RelPermalink }}"
+                integrity="{{ .Data.Integrity }}"
+                crossorigin="anonymous" />
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ $t.Stop }}
     {{ end }}
+  </head>
+  <body class="my-10">
+    {{ block "main" . }}{{ end }}
   </body>
   {{ partial "footer/site-footer.html" . }}
   <style>
