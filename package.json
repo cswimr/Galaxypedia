@@ -7,6 +7,7 @@
     "format": "prettier --write",
     "linkrot": "linkinator ./public --config ./linkinator.config.json",
     "pagefind": "pagefind --site public",
+    "index": "pnpm pagefind",
     "build": "hugo && pnpm pagefind",
     "ci": "hugo --minify --baseURL '$PAGEURL' && pnpm pagefind && pnpm linkrot",
     "serve": "pnpm build && hugo server -D"
