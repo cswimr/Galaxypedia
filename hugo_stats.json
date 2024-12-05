@@ -25,11 +25,19 @@
       "ul"
     ],
     "classes": [
+      "border-2",
+      "border-blue",
+      "border-solid",
+      "float-right",
       "footer",
       "infobox-row",
       "markdown",
+      "max-w-80",
       "my-10",
-      "shipinfobox"
+      "rounded",
+      "rounded-sm",
+      "shipinfobox",
+      "w-2/5"
     ],
     "ids": [
       "advantages",

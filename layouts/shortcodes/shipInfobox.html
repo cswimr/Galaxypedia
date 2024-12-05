@@ -27,7 +27,7 @@
 {{ end }}
 
 
-<div class="shipinfobox" data-pagefind-ignore>
+<div class="shipinfobox w-2/5 max-w-80 float-right border-2 border-solid border-blue rounded-sm" data-pagefind-ignore>
   <h2>The {{ .Page.Title }}</h2>
   <img
     src="./{{ .Page.Title }}-icon.webp"
@@ -95,19 +95,16 @@
   }
 
   .shipinfobox {
-    width: 32vw;
-    max-width: 300px;
-    float: right;
-    border: 2px solid black;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #1d1d1d;
       color: white;
       font-family: Comic Neue;
-      border-radius: 10px;
       margin-right: 5px;
+      overflow: hidden;
   }
 
     .shipinfobox p {
@@ -120,6 +117,7 @@
 .infobox-row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .infobox-row p {
