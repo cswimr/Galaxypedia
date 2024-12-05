@@ -1,11 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" charset="utf-8">
-<head>
-        <meta charset="utf-8">
-        <title>{{ block "title" . }}{{ end }}</title>
-</head>
-<body>
-	{{ block "main" . }}
-	{{ end }}
-</body>
+  <head>
+    <!-- Meta tags -->
+    <meta
+      name="title"
+      content="Galaxypedia - {{ .Title }}"
+      property="og:title"
+      property="twitter:title"
+    />
+    <meta
+      name="description"
+      content="{{ or .Description .Summary }}"
+      property="og:description"
+      property="twitter:description"
+    />
+    <meta
+      content="{{ .Permalink }}-icon.webp"
+      property="og:image"
+      property="twitter:image"
+    />
+    <meta content="{{ .Permalink }}" property="og:url" property="twitter:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary_large_image" property="twitter:card" />
+    <meta charset="utf-8" />
+    <title>{{ block "title" . }}{{ end }}</title>
+  </head>
+  <body>
+    {{ block "main" . }}
+    {{ end }}
+  </body>
+  {{ partial "footer/site-footer.html" . }}
 </html>
