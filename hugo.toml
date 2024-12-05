@@ -1,5 +1,5 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://galaxypedia-wiki.github.io/Galaxypedia-Hugo/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Galaxypedia'
 sectionPagesMenu = 'main'
 enableGitInfo = true

@@ -60,7 +60,7 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.page_url }}/"
+          hugo --minify
       - name: Build Pagefind index
         run: pnpm pagefind
       - name: Check for broken external links
