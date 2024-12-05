@@ -1,3 +1,4 @@
+Name: Pull Request Validator
 on:
   pull_request:
 
