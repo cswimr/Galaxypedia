@@ -1,19 +1,19 @@
 <footer class="footer" style="border-top: 1px solid black;">
   <div id="footer-info">
     {{ with .GitInfo }}
-      This page was last updated on
-      {{ .CommitDate.Format "January 2, 2006" }}
-      at {{ .CommitDate.Format "3:04 PM" }} by {{ .AuthorName }}.
+        This page was last updated on
+        {{ .CommitDate.Format "January 2, 2006" }}
+        at {{ .CommitDate.Format "3:04 PM" }} by {{ partial "github-user.html" (dict "context" . "username" .AuthorName ) }}
     {{ end }}
-    <br />
-    <br />
-    &copy; 2024 Galaxypedia.
-    <a
-      href="https://creativecommons.org/licenses/by-nc/4.0/"
-      title="Creative Commons Attribution"
-      >Some rights reserved</a
-    >; please attribute properly and link back.
-  </div>
+    </div>
+    <div>
+        &copy; 2024 Galaxypedia.
+        <a
+          href="https://creativecommons.org/licenses/by-nc/4.0/"
+          title="Creative Commons Attribution"
+          >Some rights reserved</a
+        >; please attribute properly and link back.
+    </div>
   {{/*  <ul class="footer-links">
     <li>
       <a

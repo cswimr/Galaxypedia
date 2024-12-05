@@ -33,16 +33,16 @@
     @apply text-sm font-bold;
   }
 
-  p + h2,
-  p + h3,
-  ul + h2,
-  ul + h3,
-  ol + h2,
-  ol + h3 {
+  p+h2,
+  p+h3,
+  ul+h2,
+  ul+h3,
+  ol+h2,
+  ol+h3 {
     @apply mt-6;
   }
 
-  h2 + h3 {
+  h2+h3 {
     @apply mt-2;
   }
 
@@ -51,7 +51,7 @@
   }
 
   a {
-    @apply text-blue-600 underline;
+    @apply text-blue-300 underline;
   }
 
   a:hover {
@@ -76,6 +76,7 @@
 
   .highlight {
     @apply my-2;
+
     pre {
       @apply text-sm m-0 p-4;
 

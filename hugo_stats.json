@@ -4,7 +4,6 @@
       "a",
       "b",
       "body",
-      "br",
       "div",
       "em",
       "footer",
@@ -25,18 +24,23 @@
       "ul"
     ],
     "classes": [
+      "align-middle",
       "border-2",
       "border-blue",
       "border-solid",
       "float-right",
       "footer",
+      "h-10",
       "infobox-row",
+      "inline",
       "markdown",
       "max-w-80",
+      "ml-2",
       "my-10",
-      "rounded",
+      "rounded-full",
       "rounded-sm",
       "shipinfobox",
+      "w-10",
       "w-2/5"
     ],
     "ids": [
