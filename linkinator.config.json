@@ -1,6 +1,9 @@
 {
     "recurse": true,
-    "skip": "livereload.js",
+    "skip": [
+        "livereload.js",
+        "-icon.webp"
+    ],
     "retry": true,
     "retryErrors": true,
     "retryErrorsCount": 3,
