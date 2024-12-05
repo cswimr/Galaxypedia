@@ -47,14 +47,17 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+        version: 9
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: "22"
-      - name: Install pnpm
-        run: npm install -g pnpm
-      - name: Setup pnpm & Install dependencies
-        run: "pnpm setup && pnpm i -P && pnpm add -g npx"
+          cache: "pnpm"
+      - name: Install dependencies
+        run: "pnpm i -P"
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
