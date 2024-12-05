@@ -1,0 +1,36 @@
+<footer class="footer" style="border-top: 1px solid black;">
+  <div id="footer-info">
+    {{ with .GitInfo }}
+      This page was last updated on
+      {{ .CommitDate.Format "January 2, 2006" }}
+      at {{ .CommitDate.Format "3:04 PM" }} by {{ .AuthorName }}.
+    {{ end }}
+    <br />
+    <br />
+    &copy; 2024 Galaxypedia.
+    <a
+      href="https://creativecommons.org/licenses/by-nc/4.0/"
+      title="Creative Commons Attribution"
+      >Some rights reserved</a
+    >; please attribute properly and link back.
+  </div>
+  {{/*  <ul class="footer-links">
+    <li>
+      <a
+        href="https://openrss.org/github.com/Galaxypedia-Wiki/Galaxypedia-Hugo/commits/main"
+        type="application/rss+xml"
+        target="_blank"
+        >RSS feed</a
+      >
+    </li>
+    <li>
+      <a href="https://gohugo.io/" class="footer-links-kudos"
+        >Made with
+        <img
+          src="{{ .Site.BaseURL }}images/hugo-logo.png"
+          width="22"
+          height="22"
+      /></a>
+    </li>
+  </ul>  */}}
+</footer>
