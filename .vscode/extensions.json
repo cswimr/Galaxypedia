@@ -1,8 +1,9 @@
 {
-    "recommendations": [
-        "esbenp.prettier-vscode",
-        "davidanson.vscode-markdownlint",
-        "kaellarkin.hugo-shortcode-syntax",
-        "budparr.language-hugo-vscode"
-    ]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "davidanson.vscode-markdownlint",
+    "kaellarkin.hugo-shortcode-syntax",
+    "budparr.language-hugo-vscode",
+    "bradlc.vscode-tailwindcss"
+  ]
 }
