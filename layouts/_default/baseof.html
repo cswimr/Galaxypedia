@@ -22,8 +22,9 @@
     <meta content="{{ .Permalink }}" property="og:url" property="twitter:url" />
     <meta content="website" property="og:type" />
     <meta content="summary_large_image" property="twitter:card" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
-    <title>Galaxypedia - {{ .Title }}</title>
+    <title>{{ if .Title}} Galaxypedia - {{ .Title }} {{ else }} Galaxypedia {{ end }}</title>
     {{ with (templates.Defer (dict "key" "global")) }}
       {{ $t := debug.Timer "tailwindcss" }}
       {{ with resources.Get "css/styles.css" }}
@@ -48,8 +49,10 @@
       {{ $t.Stop }}
     {{ end }}
   </head>
-  <body class="my-10">
+  <body>
+      <div class="content">
     {{ block "main" . }}{{ end }}
+      </div>
   </body>
   {{ partial "footer/site-footer.html" . }}
   <style>

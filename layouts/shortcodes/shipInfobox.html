@@ -14,7 +14,6 @@
 <!-- Get the data for the specific ship (match to page title) -->
 {{ $ship := "" }}
 {{ $ship = .Page.Title }}
-{{ $ship = $ship | replaceRE " " "_" }}
 {{ $ship = $ship | title }}
 
 {{ $shipData := dict }}
@@ -26,9 +25,8 @@
   {{ $shipData = merge $shipData (dict $key $value) }}
 {{ end }}
 
-
-<div class="shipinfobox w-2/5 max-w-80 float-right border-2 border-solid border-blue rounded-sm" data-pagefind-ignore>
-  <h2>The {{ .Page.Title }}</h2>
+<div class="shipinfobox sm:w-2/5 w-11/12 sm:max-w-80 max-w-full mx-0 sm:mx-1 sm:float-right border-2 border-solid border-black rounded-xl p-2.5 box-border bg-slate-800 text-white overflow-hidden sm:left-0 left-1/2 relative sm:static -translate-x-2/4 sm:translate-x-0 flex-col flex" data-pagefind-ignore>
+  <h2 class="pagetitle">The {{ .Page.Title }}</h2>
   <img
     src="./{{ .Page.Title }}-icon.webp"
     alt="{{ .Page.Title }}"
@@ -95,16 +93,7 @@
   }
 
   .shipinfobox {
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #1d1d1d;
-      color: white;
       font-family: Comic Neue;
-      margin-right: 5px;
-      overflow: hidden;
   }
 
     .shipinfobox p {
@@ -118,6 +107,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .infobox-row p {
