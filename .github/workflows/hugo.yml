@@ -57,11 +57,14 @@ jobs:
         run: "pnpm i -P"
       - name: Build with Hugo
         env:
-          PAGEURL: ${{ steps.pages.outputs.page_url }}
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          pnpm run ci
+          hugo --minify --baseURL ${{ steps.pages.outputs.page_url }}
+      - name: Build Pagefind index
+        run: pnpm pagefind
+      - name: Check for broken external links
+        run: pnpm linkrot
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
