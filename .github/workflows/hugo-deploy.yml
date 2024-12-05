@@ -27,9 +27,7 @@ defaults:
     shell: bash
 
 jobs:
-  # Build job
   build:
-    runs-on: ubuntu-latest
     uses: ./.github/workflows/hugo-build.yml
     with:
       production: true
