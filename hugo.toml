@@ -12,3 +12,6 @@ enableGitInfo = true
 [[build.cachebusters]]
     source = "(postcss|tailwind)\\.config\\.js"
     target = "css"
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
