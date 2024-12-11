@@ -28,8 +28,47 @@ h6 {
     @apply w-10/12 mx-auto bg-slate-900 p-4 rounded-lg my-4;
 }
 
+/* Custom Font Loading */
+@font-face {
+	font-family: "Rocket Rinder";
+	src: url("/fonts/Rocket Rinder.otf") format('opentype')
 }
 
+@font-face {
+	font-family: "OriginTech";
+	src: url("/fonts/OriginTech personal use.ttf") format('truetype')
+}
+
+@font-face {
+	font-family: "Ethno Centric";
+	src: url("/fonts/ethnocentric rg.ttf") format('truetype')
+}
+
+@font-face {
+	font-family: "Star Jedi";
+	src: url("/fonts/Starjedi.ttf") format('truetype')
+}
+
+@font-face {
+	font-family: "Android";
+	src: url("/fonts/Android/Android.ttf") format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Android";
+	src: url("/fonts/Android/Android Italic.ttf") format('truetype');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Android Hollow";
+	src: url("/fonts/Android/Android Hollow.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "Olga";
+	src: url("/fonts/Olga.ttf") format('truetype');
 }
 
 @import "components/markdown.css";
