@@ -25,7 +25,7 @@
   {{ $shipData = merge $shipData (dict $key $value) }}
 {{ end }}
 
-<div class="shipinfobox sm:w-2/5 w-11/12 sm:max-w-80 max-w-full mx-0 sm:mx-1 sm:float-right border-2 border-solid border-black rounded-xl p-2.5 box-border bg-slate-800 text-white overflow-hidden sm:left-0 left-1/2 relative sm:static -translate-x-2/4 sm:translate-x-0 flex-col flex" data-pagefind-ignore>
+<div class="shipinfobox sm:w-2/5 w-11/12 sm:max-w-80 max-w-full mr-0 ml-3 mb-3 sm:float-right border border-solid rounded-xl p-2.5 box-border text-white overflow-hidden sm:left-0 left-1/2 relative sm:static -translate-x-2/4 sm:translate-x-0 flex-col flex" data-pagefind-ignore>
   <h2 class="infoboxtitle !my-4">The {{ .Page.Title }}</h2>
   <img
     src="./{{ .Page.Title }}-icon.webp"
@@ -90,9 +90,15 @@
       overflow: hidden;
   }
 
+.shipinfobox {
+background-color: var(--color-bg3);
+border-color: var(--color-bg4);
+box-shadow: 0 0 5px 0 var(--color-bg4);
+}
+
     .shipinfobox p {
         padding: 5px 10px;
-        background-color: #2d2d2d;
+        background-color: var(--color-bg4);
         border: 1px solid black;
         margin: 0 0 -1px -1px;
         word-break: break-word;
