@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Galaxypedia'
 sectionPagesMenu = 'main'
 enableGitInfo = true
+summaryLength = 100
 
 [build.buildStats]
     enable = true
