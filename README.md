@@ -45,6 +45,7 @@ Some features that the Hugo version has over the MediaWiki version are:
   - Also we finally don't have to deal with bot accounts spamming the site with nonsense. This is a huge relief.
 
 ## Contributing
+See the [wiki](https://github.com/Galaxypedia-Wiki/Galaxypedia-Hugo/wiki)
 ### To the content
 Contributing to the content is easy. If you want to make a change to an existing page, you can easily use the GitHub web editor, make your changes, and let it do the heavy work of forking and creating a pull request.
 
