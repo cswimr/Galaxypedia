@@ -4,18 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write",
+    "format": "prettier --write --ignore-unknown .",
     "linkrot": "linkinator ./public --config ./linkinator.config.json",
     "pagefind": "pagefind --site public",
     "index": "pnpm pagefind",
     "build": "hugo && pnpm pagefind",
     "ci": "hugo --minify --baseURL '$PAGEURL' && pnpm pagefind && pnpm linkrot",
-    "serve": "pnpm build && hugo server -D"
+    "serve": "pnpm build && hugo server -D",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.4.2",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-tailwind-css": "^1.5.0"
