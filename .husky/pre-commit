@@ -1,5 +1,3 @@
 echo "Running prettier"
 
 pnpm exec prettier $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g') --check --ignore-unknown
-
-git update-index --again
