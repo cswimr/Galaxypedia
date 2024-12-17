@@ -5,6 +5,7 @@ sectionPagesMenu: "main"
 enableGitInfo: true
 summaryLength: 100
 enableRobotsTXT: true
+disablePathToLower: true
 
 build:
   buildStats:
