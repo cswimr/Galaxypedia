@@ -28,18 +28,17 @@
     <title>
       {{ if .Title }}Galaxypedia - {{ .Title }}{{ else }}Galaxypedia{{ end }}
     </title>
-    {{ $jsBuildOpts := dict "minify" true }}
-    {{ if getenv "CI" }}
+    {{ if true }}
       {{/* $CI is set to true when building with GitHub Actions.
         We provide this only in CI so GitHub Deployments do not link to broken sites.
       */}}
-      {{ with resources.Get "js/redirect.js" }}
-        {{ with . | js.Build $jsBuildOpts | fingerprint }}
-          <script
-            src="{{ .RelPermalink }}"
-            integrity="{{ .Data.Integrity }}"
-          ></script>
-        {{ end }}
+      {{ $jsBuildOpts := dict "minify" false "params" (dict "baseUrl" (.Site.BaseURL | safeJS )) }}
+      {{ with resources.Get "js/redirect.js" | js.Build $jsBuildOpts | fingerprint }}
+        <script
+          src="{{ .RelPermalink }}"
+          integrity="{{ .Data.Integrity }}"
+          crossorigin="anonymous"
+        ></script>
       {{ end }}
     {{ end }}
     {{ if hugo.IsProduction }}

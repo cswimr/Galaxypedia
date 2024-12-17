@@ -1,5 +1,6 @@
+import * as params from "@params";
 (function () {
-  const baseUrl = "{{ .Site.BaseURL | safeJS }}".replace(/\/$/, "");
+  const baseUrl = params.baseUrl.replace(/\/$/, "");
   const url = new URL(window.location.href);
   if (url.pathname.startsWith(baseUrl)) {
     const newUrl = new URL(url.pathname.replace(baseUrl, ""), baseUrl);
