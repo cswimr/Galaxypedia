@@ -11,7 +11,7 @@
     "build": "hugo && pnpm pagefind",
     "ci": "hugo --minify --baseURL '$PAGEURL' && pnpm pagefind && pnpm linkrot",
     "serve": "pnpm build && hugo server -D",
-    "prepare": "husky"
+    "prepare": "node .husky/install.mjs"
   },
   "keywords": [],
   "author": "",
