@@ -1,0 +1,27 @@
+<meta
+  name="title"
+  content="{{ if .Title }}
+    Galaxypedia -
+    {{ .Title }}
+  {{ else }}
+    Galaxypedia
+  {{ end }}"
+  property="og:title"
+  property="twitter:title"
+/>
+<meta
+  name="description"
+  content="{{ or .Description .Summary }}"
+  property="og:description"
+  property="twitter:description"
+/>
+<meta
+  content="{{ .Permalink }}-icon.webp"
+  property="og:image"
+  property="twitter:image"
+/>
+<meta content="{{ .Permalink }}" property="og:url" property="twitter:url" />
+<meta content="website" property="og:type" />
+<meta content="summary_large_image" property="twitter:card" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8" />
