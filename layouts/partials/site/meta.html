@@ -1,11 +1,13 @@
+{{ $title := print "Galaxypedia - " ( or .Title "Home" ) }}
+{{ $imageLink := print (absURL "favicon.svg") }}
+{{ if .Title }}
+  {{ $imageLink = print .Permalink .Title  "-icon.webp" }}
+{{ end }}
+
+
 <meta
   name="title"
-  content="{{ if .Title }}
-    Galaxypedia -
-    {{ .Title }}
-  {{ else }}
-    Galaxypedia
-  {{ end }}"
+  content="{{ $title }}"
   property="og:title"
   property="twitter:title"
 />
@@ -15,15 +17,7 @@
   property="og:description"
   property="twitter:description"
 />
-<meta
-  content="{{ if .Title }}
-    {{ .Permalink }}{{ .Title }}-icon.webp
-  {{ else }}
-    {{ .Permalink }}favicon.svg
-  {{ end }}"
-  property="og:image"
-  property="twitter:image"
-/>
+<meta content="{{ $imageLink }}" property="og:image" property="twitter:image" />
 <meta content="{{ .Permalink }}" property="og:url" property="twitter:url" />
 <meta content="website" property="og:type" />
 <meta content="summary_large_image" property="twitter:card" />
