@@ -16,7 +16,11 @@
   property="twitter:description"
 />
 <meta
-  content="{{ .Permalink }}-icon.webp"
+  content="{{ if .Title }}
+    {{ .Permalink }}{{ .Title }}-icon.webp
+  {{ else }}
+    {{ .Permalink }}favicon.svg
+  {{ end }}"
   property="og:image"
   property="twitter:image"
 />
