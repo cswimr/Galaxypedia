@@ -1,5 +1,5 @@
 {{ $title := print "Galaxypedia - " ( or .Title "Home" ) }}
-{{ $imageLink := print (absURL "favicon.svg") }}
+{{ $imageLink := absURL "favicon.svg" }}
 {{ if .Title }}
   {{ $imageLink = print .Permalink .Title  "-icon.webp" }}
 {{ end }}
