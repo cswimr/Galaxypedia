@@ -43,7 +43,7 @@ Some features that the Hugo version has over the MediaWiki version are:
   - Being open source also means that the Galaxypedia is more portable. Anyone can easily download the site and archive it, host it themselves, or view the history.
   - Being open source also means that the Galaxypedia is more secure. Anyone can view the code and see if there are any security vulnerabilities. This ensures that the Galaxypedia is safe for everyone to use.
 - Lightweight and Fast
-  - Currently, the production version of the Hugo Galaxypedia is hosted on GitHub Pages. This means that the Galaxypedia is free to host, and doesn't require a server. This saves smallketchup82 money, which was one of the main concerns with the MediaWiki version. Server costs are not cheap!
+  - Currently, the production version of the Hugo Galaxypedia is hosted on Cloudflare Pages. This means that the Galaxypedia is free to host, and doesn't require a server. This saves smallketchup82 money, which was one of the main concerns with the MediaWiki version. Server costs are not cheap!
   - The site being static means that even if the site goes down at any point in time, people can view the Galaxypedia by running `hugo server` if they have the source code downloaded.
   - Unlike MediaWiki which is built on PHP, uses extensions and themes, and requires a MySQL database, the Hugo Galaxypedia has no such concepts. The Hugo Galaxypedia is much faster since your browser doesn't have to load PHP, the server doesn't have to do database queries, and the site doesn't have to load a bunch of unnecessary extensions and themes.
 - Secure and Independent
