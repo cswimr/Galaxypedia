@@ -10,7 +10,7 @@ await waitKeyPressed();
 const client = new Client({
     node: 'https://localhost:9200',
     tls: {
-        ca: fs.readFileSync('./http_ca.crt'),
+//        ca: fs.readFileSync('./http_ca.crt'),
         rejectUnauthorized: false
     },
     auth: {
