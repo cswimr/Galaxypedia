@@ -1,6 +1,10 @@
+FROM anatolelucet/neovim:stable-ubuntu AS neovim
+
 FROM mcr.microsoft.com/devcontainers/javascript-node:22-bookworm
 LABEL repository="github.com/Galaxypedia-Wiki/Galaxypedia"
 LABEL maintainer="cswimr <seaswimmerthefsh@gmail.com>"
+
+COPY --from=neovim /usr/local /usr/local
 
 ARG USER=node
 ARG DEBIAN_FRONTEND=noninteractive
