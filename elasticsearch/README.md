@@ -56,6 +56,5 @@ hugo serve
 > [!WARNING]  
 > Searching will not work as you will have to make some custom adjustments to `assets/js/search.js`. This guide will be updated with instructions on how to do this in the future. For now, you'll have to figure it out yourself.
 
-And navigate to `http://localhost:1313`. You'll notice that the search doesn't work. This is because of some CORS schenanigans. To fix this, just navigate to [https://localhost:9200/galaxypedia/_search](https://localhost:9200/galaxypedia/_search) (make sure to change the port to whatever you set) and accept the risk. This should fix the issue.
-
+And navigate to `http://localhost:1313`. You'll notice that the search doesn't work. This is because of some CORS shenanigans. To fix this, just navigate to [https://localhost:9200/galaxypedia/_search](https://localhost:9200/galaxypedia/_search) (make sure to change the port to whatever you set) and accept the risk. This should fix the issue.
 Enjoy your new and improved search!
