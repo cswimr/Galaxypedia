@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 break;
             }
             let a = document.createElement('a');
-            a.href = (window.location.origin + hit._source.href).replace(/\s+/g, '-').replace('(', '').replace(')', '');
+            a.href = (window.location.origin + hit._source.uri).replace(/\s+/g, '-').replace('(', '').replace(')', '').toLowerCase();
             a.textContent = hit._source.title;
             results.appendChild(a);
             setTimeout(() => {
