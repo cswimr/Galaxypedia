@@ -44,7 +44,7 @@ jobs:
         run: |
           echo "Building for $HUGO_ENVIRONMENT"
           if [ "$HUGO_ENVIRONMENT" = "production" ]; then
-            export HUGO_PAGE_URL="https://v2.galaxypedia.org"
+            export HUGO_PAGE_URL="https://galaxypedia.org"
           else
             if [ "$BASE_REPO" = "$HEAD_REPO" ]; then
               slug="${REF}"
