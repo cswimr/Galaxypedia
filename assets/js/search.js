@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     hits: fiveResults.map(r => ({
                         _source: {
                             title: r.meta.title,
-                            href: r.url
+                            uri: r.url
                         }
                     })
                     )
