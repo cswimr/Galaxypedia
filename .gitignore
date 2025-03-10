@@ -6,9 +6,11 @@ node_modules/
 .mypy_cache/
 resources/
 hugo_stats.json
+.cache/
+.pnpm-store/
 
 # .vscode
 .vscode/*
-!.vscode/extensions.json
+!.vscode/launch.json
 !.vscode/settings.json
 elasticsearch/.env
