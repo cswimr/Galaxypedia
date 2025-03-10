@@ -14,3 +14,4 @@ hugo_stats.json
 !.vscode/launch.json
 !.vscode/settings.json
 elasticsearch/.env
+elasticsearch/certs

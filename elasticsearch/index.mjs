@@ -107,7 +107,7 @@ console.log("Uploading index to Elasticsearch...");
     doc,
   ]);
 
-    console.log("Uploading index");
+  console.log("Uploading index");
   const bulkResponse = await client.bulk({ refresh: true, body: operations });
   if (bulkResponse.errors) {
     const erroredDocuments = [];
@@ -124,7 +124,9 @@ console.log("Uploading index to Elasticsearch...");
     });
     console.log(erroredDocuments);
   } else {
-    console.log(`Successfully uploaded and indexed ${fileContents.length} documents`);
+    console.log(
+      `Successfully uploaded and indexed ${fileContents.length} documents`,
+    );
   }
 
   await client.close();

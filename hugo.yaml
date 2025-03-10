@@ -26,4 +26,4 @@ taxonomies:
 mediaTypes:
   text/javascript:
     suffixes:
-    - js
+      - js
