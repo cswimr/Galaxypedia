@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                 }),
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Basic ZWxhc3RpYzpzdWdvbmRlc2U='
+                    // Below is a read-only API key for the public elasticsearch instance. It is safe to expose.
+                    'Authorization': 'Apikey QWtWY2dwVUJ1T2RTeEFPSkFNYzY6ZVRzQW5jUlZRSXV0TmZ0bEk5UTJUZw=='
                 }
             });
             data = await response.json();

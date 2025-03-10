@@ -11,7 +11,7 @@ const client = new Client({
   },
   auth: {
     username: "elastic",
-    password: "sugondese",
+    password: process.env.ELASTIC_PASSWORD || "changeme",
   },
 });
 
