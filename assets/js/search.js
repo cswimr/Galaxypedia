@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     searchbar.addEventListener('input', async function () {
         let data;
         try {
-            let response = await fetch('https://localhost:9200/galaxypedia/_search', {
+            let response = await fetch('https://search.galaxypedia.org/galaxypedia/_search', {
                 method: 'POST',
                 body: JSON.stringify({
                     query: {
